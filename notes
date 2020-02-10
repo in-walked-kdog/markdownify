@@ -1,0 +1,13 @@
+nvm install stable
+nvm install --lts
+nvm current
+
+npm init
+npm install -g shadow-cljs
+npm install --save-dev shadow-cljs  # install locally, adds to package.json devDependencies
+
+shadow-cljs init       # use if installed globally
+npx shadow-cljs init   # use if not installed globally
+npx shadow-cljs watch app
+
+npm install showdown
